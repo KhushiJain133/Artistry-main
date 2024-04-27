@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("img/home.jpeg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.mid-section {
+  margin-top: 100px;
+}
+.container {
+  max-width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 35px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.container .card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 0 auto;
+  background: #000;
+  border-radius: 15px;
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+}
+.container .card .face {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .card .face.face2 {
+  transition: 0.5s;
+}
+.container .card .face.face2 h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+  color: #fff;
+  transition: 0.5s;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  font-family: "Kalam", cursive;
+}
+.container .card:hover .face.face2 {
+  height: 60px;
+}
+.container .card:hover .face.face2 h2 {
+  font-size: 2em;
+}
+.container .card:nth-child(1) .face.face2 {
+  background: linear-gradient(to right, #dbd5a4, #649173);
+  border-radius: 15px;
+}
+.container .card:nth-child(2) .face.face2 {
+  background: linear-gradient(to right, #dbd5a4, #649173);
+  border-radius: 15px;
+}
+.container .card:nth-child(3) .face.face2 {
+  background: linear-gradient(to right, #dbd5a4, #649173);
+  border-radius: 15px;
+}
+
+.container .card:nth-child(4) .face.face2 {
+  background: linear-gradient(to right, #dbd5a4, #649173);
+  border-radius: 15px;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.btn-sign {
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  perspective: 1000px;
+}
+.btn-sign a {
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform 0.25s;
+  font-family: "Montserrat", sans-serif;
+}
+.btn-sign a:before,
+.btn-sign a:after {
+  position: absolute;
+  content: "Login";
+  height: 55px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid white;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.btn-sign a:before {
+  color: #fff;
+  background: black;
+  transform: rotateY(0deg) translateZ(25px);
+}
+.btn-sign a:after {
+  color: #fff;
+  transform: rotateX(90deg) translateZ(25px);
+}
+.btn-sign a:hover {
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+.btn-log {
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  perspective: 1000px;
+}
+.btn-log a {
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform 0.25s;
+  font-family: "Montserrat", sans-serif;
+}
+.btn-log a:before,
+.btn-log a:after {
+  position: absolute;
+  content: "Signup";
+  height: 55px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid white;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.btn-log a:before {
+  color: #fff;
+  background: black;
+  transform: rotateY(0deg) translateZ(25px);
+}
+.btn-log a:after {
+  color: #fff;
+  transform: rotateX(90deg) translateZ(25px);
+}
+.btn-log a:hover {
+  transform: translateZ(-25px) rotateX(-90deg);
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selling</title>
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/sell.css" />
+  </head>
+  <body>
+    <div class="logo">
+      <a href="./mainpage.html"><img class="art" src="./img/logo2.jpg" /></a>
+    </div>
+    <div class="about">
+      <a href="./about.html">About Us</a>
+    </div>
+    <form action="sell.php" method="POST" enctype="multipart/form-data">
+      <div class="header">
+        <div class="form">
+          <div class="title">Welcome</div>
+          <div class="subtitle">Let's create your account!</div>
+          <div class="input-container ic1">
+            <input
+              id="firstname"
+              class="input"
+              type="text"
+              placeholder=" "
+              name="name"
+            />
+            <div class="cut"></div>
+            <label for="firstname" class="placeholder">Full name</label>
+          </div>
+          <div class="input-container ic2">
+            <input
+              id="lastname"
+              class="input"
+              type="text"
+              placeholder=" "
+              name="desc"
+            />
+            <div class="cut"></div>
+            <label for="lastname" class="placeholder">Description</label>
+          </div>
+          <div class="input-container ic2">
+            <input
+              id="email"
+              class="input"
+              type="text"
+              placeholder=" "
+              name="email"
+            />
+            <div class="cut cut-short"></div>
+            <label for="email" class="placeholder">Email</label>
+          </div>
+          <div class="input-container ic2">
+            <input
+              id="art"
+              class="input"
+              type="text"
+              placeholder=" "
+              name="type"
+            />
+            <div class="cut cut-short"></div>
+            <label for="art" class="placeholder">Art type </label>
+          </div>
+          <div class="input-container ic2">
+            <label class="subtitle" style="display: block; margin-bottom: 10px"
+              >Upload your image here:
+            </label>
+            <input class="image" type="file" name="file" />
+          </div>
+
+          <button
+            type="submit"
+            id="submit"
+            class="submit"
+            name="upload"
+            value="Upload"
+          >
+            submit
+          </button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
